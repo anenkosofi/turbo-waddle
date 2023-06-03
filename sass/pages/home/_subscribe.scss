@@ -1,0 +1,112 @@
+.subscribe {
+  padding: 32px 0 166px;
+
+  &__container {
+    position: relative;
+    padding: 79px 155px;
+    background-color: $light-purple;
+    border-radius: 129px 20px 20px 20px;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(25%, -25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    color: $white;
+    background: linear-gradient(
+      201.65deg,
+      $primary-dark-purple 10.27%,
+      $secondary-dark-purple 100%
+    );
+    border-radius: 50%;
+  }
+
+  &__title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  &__description {
+    margin-bottom: 74px;
+    font-family: $secondary-font-stack;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 1.64;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  &__field {
+    width: 100%;
+  }
+
+  &__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  &__input {
+    width: 420px;
+    padding: 23px 28px 28px;
+    font-family: $senary-font-stack;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    color: $tertiary-light;
+    background-color: $white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+    &::placeholder {
+      font-family: $senary-font-stack;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.21;
+      color: $tertiary-light;
+    }
+  }
+
+  &__button {
+    padding: 22px 50px 23px;
+    font-family: $quinary-font-stack;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.35;
+    color: $white;
+    background: linear-gradient(180deg, $primary-light-red 0%, $dark-red 100%);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Google Sans";
+  font-display: swap;
+  src: local("O"), url("../../fonts/Google-Sans-Medium.woff") format("woff"),
+    url("../../fonts/Google-Sans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  font-family: $primary-font-stack;
+  font-size: 22px;
+  color: $primary-light;
+  background: $white;
+}

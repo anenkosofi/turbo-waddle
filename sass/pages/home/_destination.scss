@@ -1,0 +1,93 @@
+.destination {
+  padding: 64px 0 92px;
+
+  &__pre-title {
+    margin-bottom: 10px;
+    font-family: $secondary-font-stack;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+    font-family: $quaternary-font-stack;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.28;
+    text-align: center;
+    color: $quaternary-dark;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 310px);
+    justify-content: center;
+    gap: 40px;
+  }
+
+  &__item {
+    position: relative;
+    border-radius: 24px;
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02))
+      drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852))
+      drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481))
+      drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01))
+      drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185))
+      drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+    overflow: hidden;
+    transition: filter 250ms $timing-function;
+
+    &:hover {
+      filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.05))
+        drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.05))
+        drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.05))
+        drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.05))
+        drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.05))
+        drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.05));
+    }
+
+    &:hover .destination__image {
+      transform: scale(1.05);
+    }
+  }
+
+  &__image {
+    object-fit: cover;
+    object-position: center;
+    transition: transform 400ms $timing-function;
+  }
+
+  &__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 18px;
+    padding: 27px 20px 42px;
+    font-family: $secondary-font-stack;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.25;
+    background-color: $white;
+  }
+
+  &__place {
+    font-weight: 500;
+  }
+
+  &__duration {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 16px;
+  }
+
+  &__icon {
+    fill: $primary-dark;
+  }
+}

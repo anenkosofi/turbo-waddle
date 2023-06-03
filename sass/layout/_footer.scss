@@ -1,0 +1,87 @@
+.footer {
+  padding-bottom: 79px;
+  &__container {
+    display: grid;
+    grid-template-rows: 1fr 18px;
+    gap: 83px;
+  }
+
+  &__links {
+    display: grid;
+    grid-template-columns: 207px 474px 214px;
+    grid-template-rows: 153px;
+    justify-content: space-between;
+  }
+
+  &__overview {
+    font-family: $secondary-font-stack;
+    font-weight: 500;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 19px;
+    font-size: 44px;
+    line-height: 1.5;
+    color: $tertiary-dark;
+  }
+
+  &__description {
+    font-size: 13px;
+    line-height: 1.25;
+  }
+
+  &__pages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: $secondary-font-stack;
+    line-height: 1.25;
+  }
+
+  &__title {
+    margin-bottom: 34px;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1.25;
+    color: $primary-dark;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  &__social-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 34px;
+  }
+
+  &__action {
+    display: block;
+    margin-bottom: 16px;
+    font-family: $secondary-font-stack;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.25;
+    letter-spacing: 0.005em;
+  }
+
+  &__app {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  &__right {
+    font-family: $secondary-font-stack;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.25;
+    text-align: center;
+  }
+}
