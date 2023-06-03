@@ -1,0 +1,61 @@
+@mixin ad-pre-title($options: ()) {
+  $default-params: (
+    text-align: left,
+    text-transform: none,
+  );
+  $params: map-merge($default-params, $options);
+
+  font-family: $secondary-font-stack;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: map-get($params, text-align);
+  text-transform: map-get($params, text-transform);
+}
+
+@mixin title($text-align: center) {
+  font-family: $quaternary-font-stack;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.28;
+  text-align: $text-align;
+  color: $quaternary-dark;
+}
+
+@mixin auth-button($border-color) {
+  @extend %button;
+  width: 102px;
+  height: 42px;
+  font-family: $tertiary-font-stack;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.29;
+  color: $secondary-dark;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid $border-color;
+}
+
+@mixin filled-button(
+  $width,
+  $height,
+  $font-family,
+  $font-weight,
+  $font-size,
+  $line-height,
+  $background,
+  $box-shadow: none
+) {
+  @extend %button;
+  width: $width;
+  height: $height;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $white;
+  background: $background;
+  box-shadow: $box-shadow;
+  border-radius: 10px;
+  border: none;
+}

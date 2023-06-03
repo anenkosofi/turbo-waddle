@@ -7,6 +7,13 @@
   font-style: normal;
 }
 
+body {
+  font-family: $primary-font-stack;
+  font-size: 22px;
+  color: $primary-light;
+  background: $white;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -14,9 +21,15 @@
   padding: 0 20px;
 }
 
-body {
-  font-family: $primary-font-stack;
-  font-size: 22px;
-  color: $primary-light;
-  background: $white;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

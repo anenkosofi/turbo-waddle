@@ -3,21 +3,17 @@
 
   &__pre-title {
     margin-bottom: 10px;
-    font-family: $secondary-font-stack;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: center;
+    @include ad-pre-title(
+      (
+        text-align: center,
+        text-transform: uppercase,
+      )
+    );
   }
 
   &__title {
     margin-bottom: 66px;
-    font-family: $quaternary-font-stack;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 1.11;
-    text-align: center;
-    color: $quaternary-dark;
+    @include title();
   }
 
   &__list {

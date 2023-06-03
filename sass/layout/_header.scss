@@ -39,30 +39,10 @@
   }
 
   &__login-button {
-    padding: 9px 21px;
-    font-family: $tertiary-font-stack;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 1.29;
-    color: $secondary-dark;
-    background-color: transparent;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    cursor: pointer;
+    @include auth-button(transparent);
   }
 
   &__sign-button {
-    padding: 9px 21px;
-    font-family: $tertiary-font-stack;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 1.29;
-    color: $secondary-dark;
-    background-color: transparent;
-    border: 1px solid $secondary-dark;
-    border-radius: 5px;
-    outline: none;
-    cursor: pointer;
+    @include auth-button($secondary-dark);
   }
 }

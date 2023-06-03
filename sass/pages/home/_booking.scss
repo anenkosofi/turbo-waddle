@@ -14,19 +14,12 @@
 
   &__pre-title {
     margin-bottom: 10px;
-    font-family: $secondary-font-stack;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.5;
+    @include ad-pre-title();
   }
 
   &__title {
     margin-bottom: 31px;
-    font-family: $quaternary-font-stack;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 1.28;
-    color: $quaternary-dark;
+    @include title(left);
   }
 
   &__list {
