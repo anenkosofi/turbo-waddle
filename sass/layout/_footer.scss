@@ -1,16 +1,33 @@
 .footer {
-  padding-bottom: 79px;
+  padding: 13px 0 27px;
+  background-color: $light-peach;
+  @media screen and (min-width: 1200px) {
+    padding: 0 0 79px;
+    background-color: $white;
+  }
   &__container {
     display: grid;
     grid-template-rows: 1fr 18px;
-    gap: 83px;
+    gap: 58px;
+
+    @media screen and (min-width: 1200px) {
+      gap: 83px;
+    }
   }
 
   &__links {
     display: grid;
-    grid-template-columns: 207px 474px 214px;
-    grid-template-rows: 153px;
-    justify-content: space-between;
+    grid-template-columns: 1fr;
+    grid-template-rows: 153px 545px 153px;
+    gap: 58px;
+    @media screen and (min-width: 475px) {
+      grid-template-rows: 153px 153px 153px;
+    }
+    @media screen and (min-width: 1200px) {
+      grid-template-columns: 207px 474px 214px;
+      grid-template-rows: 153px;
+      justify-content: space-between;
+    }
   }
 
   &__overview {
@@ -33,9 +50,15 @@
 
   &__pages {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 153px);
+    gap: 43px;
     font-family: $secondary-font-stack;
     line-height: 1.25;
+    @media screen and (min-width: 475px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+    }
   }
 
   &__title {
@@ -56,18 +79,30 @@
 
   &__social-list {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-bottom: 34px;
+    margin-bottom: 40px;
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+      margin-bottom: 34px;
+    }
+  }
+
+  &__discover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
   }
 
   &__action {
     display: block;
-    margin-bottom: 16px;
     font-family: $secondary-font-stack;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.25;
+    text-align: left;
     letter-spacing: 0.005em;
   }
 

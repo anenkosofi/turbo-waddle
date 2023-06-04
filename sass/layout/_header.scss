@@ -9,6 +9,10 @@
   font-size: 17px;
   line-height: 1.29;
   color: $secondary-dark;
+  background-color: $light-peach;
+  @media screen and (min-width: 1200px) {
+    background-color: transparent;
+  }
 
   &__container {
     display: flex;
@@ -19,23 +23,68 @@
   &__nav-wrapper {
     display: flex;
     align-items: center;
-    gap: 65px;
+    gap: 42px;
+  }
+
+  &__nav {
+    @media screen and (max-width: 1199px) {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      transform: translateY(-100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 64px;
+      order: 3;
+      width: 100%;
+      padding: 98px 0;
+      font-family: $secondary-font-stack;
+      font-size: 30px;
+      line-height: 1.5;
+      letter-spacing: 0.2px;
+      color: $dark-grey;
+      background-color: $light-peach;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      gap: 64px;
+    }
   }
 
   &__nav-list {
     display: flex;
-    gap: 62px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      gap: 62px;
+    }
   }
 
   &__nav-link {
     display: block;
-    padding: 24px 0;
+    padding: 0;
+
+    @media screen and (min-width: 1200px) {
+      padding: 24px 0;
+    }
   }
 
   &__control-wrapper {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 42px;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
 
   &__login-button {

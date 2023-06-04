@@ -30,20 +30,20 @@
               <li class="header__nav-item"><a href="#" class="header__nav-link">Flights</a></li>
               <li class="header__nav-item"><a href="#" class="header__nav-link">Bookings</a></li>
             </ul>
-          </nav>
-          <div class="header__control-wrapper">
-            <button type="button" class="header__login-button">Login</button>
-            <button type="button" class="header__sign-button">Sign up</button>
-            <div class="dropdown">
-              <span class="dropdown__selected">EN</span>
-              <svg width="9" height="5" class="dropdown__icon">
-                <use href="assets/sprite.svg#icon-arrow"></use>
-              </svg>
-              <ul class="dropdown__list">
-                <li class="dropdown__item">EN</li>
-                <li>UA</li>
-              </ul>
+            <div class="header__control-wrapper">
+              <button type="button" class="header__login-button">Login</button>
+              <button type="button" class="header__sign-button">Sign up</button>
             </div>
+          </nav>
+          <div class="dropdown">
+            <span class="dropdown__selected">EN</span>
+            <svg width="9" height="5" class="dropdown__icon">
+              <use href="assets/sprite.svg#icon-arrow"></use>
+            </svg>
+            <ul class="dropdown__list">
+              <li class="dropdown__item">EN</li>
+              <li>UA</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -251,7 +251,7 @@
             </ul>
           </div>
           <div class="trip">
-            <img src="assets/turkey.jpg" alt="A girl in red dress" width="320px" class="trip__image" />
+            <img src="assets/turkey.jpg" alt="A girl in red dress" class="trip__image" />
             <h3 class="trip__place">Trip To Greece</h3>
             <p class="trip__content ">
               <span class="trip__date">14-29 June</span>
@@ -304,53 +304,57 @@
       </section>
       <section class="testimonials">
         <div class="container testimonials__container">
-          <div class="testimonials__content">
-            <div class="testimonials__heading">
-              <p class="testimonials__pre-title">Testimonials</p>
-              <h2 class="testimonials__title">
-                What people say
-                about Us.
-              </h2>
-            </div>
-            <div class="testimonials__review">
-              <div class="testimonials__thumb">
-                <img src="assets/person.png" alt="Man smiling" class="testimonials__image" />
-              </div>
-              <figure class="quote">
-                <blockquote cite="" class="quote__container">
-                  <p class="quote__text">“On the Windows talking painted pasture yet its express parties use. Sure last
-                    upon he same as
-                    knew
-                    next. Of believed or
-                    diverted no.”</p>
-                </blockquote>
-                <figcaption class="quote__author">Mike taylor <cite class="quote__origin">Lahore, Pakistan</cite>
-                </figcaption>
-              </figure>
-            </div>
+          <div class="testimonials__heading">
+            <p class="testimonials__pre-title">Testimonials</p>
+            <h2 class="testimonials__title">
+              What people say
+              about Us.
+            </h2>
           </div>
-          <ul class="testimonials__list">
-            <li class="testimonials__item">
+          <div class="testimonials__review">
+            <div class="testimonials__thumb">
+              <img src="assets/person.png" alt="Man smiling" class="testimonials__image" />
+            </div>
+            <figure class="quote">
+              <blockquote cite="" class="quote__container">
+                <p class="quote__text">“On the Windows talking painted pasture yet its express parties use. Sure last
+                  upon he same as
+                  knew
+                  next. Of believed or
+                  diverted no.”</p>
+              </blockquote>
+              <figcaption class="quote__author">Mike taylor <cite class="quote__origin">Lahore, Pakistan</cite>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="selling">
+        <div class="container selling__container">
+          <p class="selling__pre-title">Top Selling</p>
+          <h2 class="visually-hidden">Selling</h2>
+          <ul class="selling__list">
+            <li class="selling__item">
               <a href="#">
                 <img src="assets/axon.png" alt="Axon logo" width="130px" />
               </a>
             </li>
-            <li class="testimonials__item">
+            <li class="selling__item">
               <a href="#">
                 <img src="assets/jetstar.png" alt="Jetstar logo" width="173px" />
               </a>
             </li>
-            <li class="testimonials__item">
+            <li class="selling__item">
               <a href="#">
                 <img src="assets/expedia.png" alt="Expedia logo" width="162px" />
               </a>
             </li>
-            <li class="testimonials__item">
+            <li class="selling__item">
               <a href="#">
                 <img src="assets/qantas.png" alt="Qantas logo" width="162px" />
               </a>
             </li>
-            <li class="testimonials__item">
+            <li class="selling__item">
               <a href="#">
                 <img src="assets/alitalia.png" alt="Alitalia logo" width="94px" />
               </a>
@@ -465,18 +469,20 @@
                 </a>
               </li>
             </ul>
-            <strong class="footer__action">Discover our app</strong>
-            <div class="footer__app">
-              <a href="">
-                <svg width="107" height="35">
-                  <use href="assets/sprite.svg#icon-google-play"></use>
-                </svg>
-              </a>
-              <a href="">
-                <svg width="100" height="35">
-                  <use href="assets/sprite.svg#icon-apple-store"></use>
-                </svg>
-              </a>
+            <div class="footer__discover">
+              <strong class="footer__action">Discover our app</strong>
+              <div class="footer__app">
+                <a href="">
+                  <svg width="107" height="35">
+                    <use href="assets/sprite.svg#icon-google-play"></use>
+                  </svg>
+                </a>
+                <a href="">
+                  <svg width="100" height="35">
+                    <use href="assets/sprite.svg#icon-apple-store"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>

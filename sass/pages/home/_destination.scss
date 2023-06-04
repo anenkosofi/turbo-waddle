@@ -1,25 +1,47 @@
 .destination {
-  padding: 64px 0 92px;
+  padding: 0 0 73px;
+  @media screen and (min-width: 1200px) {
+    padding: 64px 0 92px;
+  }
 
   &__pre-title {
-    margin-bottom: 10px;
+    margin-bottom: 24px;
     @include ad-pre-title(
       (
+        font-size: 20px,
         text-align: center,
       )
     );
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+      @include ad-pre-title(
+        (
+          text-align: center,
+        )
+      );
+    }
   }
 
   &__title {
-    margin-bottom: 60px;
-    @include title();
+    margin-bottom: 39px;
+    @include title(center, 40px);
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 60px;
+      @include title();
+    }
   }
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(3, 310px);
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(3, 454px);
     justify-content: center;
-    gap: 40px;
+    gap: 75px;
+    @media screen and (min-width: 1200px) {
+      grid-template-columns: repeat(3, 310px);
+      grid-template-rows: auto;
+      gap: 40px;
+    }
   }
 
   &__item {

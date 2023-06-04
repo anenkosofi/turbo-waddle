@@ -1,59 +1,87 @@
 .travel {
-  height: 874px;
-  padding-top: 110px;
-  background-image: url("../../assets/ellipse.png"),
-    url("../../assets/decore.png");
-  background-repeat: no-repeat;
-  background-position: top left, top right;
+  padding: 72px 0 0;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    height: 874px;
+    padding-top: 110px;
+    background-image: url("../../assets/ellipse.png"),
+      url("../../assets/decore.png");
+    background-repeat: no-repeat;
+    background-position: top left, top right;
+  }
 
   &__container {
     position: relative;
   }
 
   &__content {
-    width: 547px;
-    padding-top: 107px;
+    @media screen and (min-width: 1200px) {
+      width: 547px;
+      padding-top: 107px;
+    }
   }
 
   &__pre-title {
-    margin-bottom: 24px;
-    font-family: $secondary-font-stack;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.5;
-    text-transform: uppercase;
-    color: $red;
+    display: none;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 24px;
+      font-family: $secondary-font-stack;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.5;
+      text-transform: uppercase;
+      color: $red;
+    }
   }
 
   &__title {
-    margin-bottom: 30px;
+    margin-bottom: 19px;
     font-family: $quaternary-font-stack;
     font-weight: 700;
-    font-size: 84px;
-    line-height: 1.06;
+    font-size: 48px;
+    line-height: 1.85;
     letter-spacing: -0.04em;
     color: $tertiary-dark;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 30px;
+      font-size: 84px;
+      line-height: 1.06;
+    }
   }
 
   &__description {
-    width: 477px;
-    margin-bottom: 34px;
-    font-family: $secondary-font-stack;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.88;
+    display: none;
+    @media screen and (min-width: 768px) {
+      width: 477px;
+      margin-bottom: 34px;
+      font-family: $secondary-font-stack;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.88;
+    }
   }
 
   &__image {
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
   }
 
   &__controll-wrapper {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 44px;
+    gap: 40px;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 44px;
+    }
   }
 
   &__find-button {

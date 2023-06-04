@@ -1,18 +1,26 @@
 .subscribe {
-  padding: 32px 0 166px;
+  padding: 0 0 58px;
+  @media screen and (min-width: 768px) {
+    padding: 32px 0 166px;
+  }
 
   &__container {
-    position: relative;
-    padding: 79px 155px;
-    background-color: $light-purple;
-    border-radius: 129px 20px 20px 20px;
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      gap: 25px;
+      background-color: transparent;
+    }
+    @media screen and (min-width: 768px) {
+      position: relative;
+      padding: 79px 155px;
+      background-color: $light-purple;
+      border-radius: 129px 20px 20px 20px;
+    }
   }
 
   &__image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(25%, -25%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,9 +33,18 @@
       $secondary-dark-purple 100%
     );
     border-radius: 50%;
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(25%, -25%);
+    }
   }
 
   &__description {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
     margin-bottom: 74px;
     font-family: $secondary-font-stack;
     font-weight: 600;
@@ -37,14 +54,19 @@
   }
 
   &__form {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 640px;
-    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 640px;
+      margin: 0 auto;
+    }
   }
 
   &__input {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
     width: 420px;
     padding: 23px 28px 28px;
     font-family: $senary-font-stack;
