@@ -77,22 +77,37 @@
     font-size: 18px;
   }
 
+  &__link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+      gap: 34px;
+    }
+  }
+
   &__social-list {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-bottom: 40px;
     @media screen and (min-width: 1200px) {
       justify-content: flex-start;
-      margin-bottom: 34px;
     }
   }
 
   &__discover {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 16px;
   }
 

@@ -27,7 +27,7 @@
   }
 
   &__nav {
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 768px) {
       position: absolute;
       top: 100%;
       left: 0;
@@ -50,7 +50,7 @@
       z-index: 3;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       display: flex;
       gap: 64px;
     }
@@ -62,7 +62,7 @@
     align-items: center;
     gap: 30px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       flex-direction: row;
       gap: 62px;
     }
@@ -71,9 +71,15 @@
   &__nav-link {
     display: block;
     padding: 0;
+    transition: color 300ms $timing-function, transform 300ms $timing-function;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       padding: 24px 0;
+    }
+
+    &:hover {
+      color: $red;
+      transform: scale(1.15);
     }
   }
 

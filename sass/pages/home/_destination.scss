@@ -1,5 +1,10 @@
 .destination {
   padding: 0 0 73px;
+  @media screen and (max-width: 767px) {
+    background-image: url("../../assets/subscribe-plus.png");
+    background-repeat: no-repeat;
+    background-position: top left -52px;
+  }
   @media screen and (min-width: 1200px) {
     padding: 64px 0 92px;
   }
@@ -44,6 +49,9 @@
     }
     @media screen and (min-width: 1200px) {
       grid-template-columns: repeat(3, 310px);
+      background-image: url("../../../assets/spiral.png");
+      background-repeat: no-repeat;
+      background-position: bottom 55px right 10px;
     }
   }
 

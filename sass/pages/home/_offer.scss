@@ -1,8 +1,14 @@
 .offer {
-  padding: 92px 0 229px;
+  padding: 0 0 229px;
 
-  @media screen {
-    padding: 92px 0;
+  @media screen and (min-width: 768px) {
+    background-image: url("../../assets/offer-plus.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0;
   }
 
   &__pre-title {

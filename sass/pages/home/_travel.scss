@@ -1,20 +1,20 @@
 .travel {
-  padding: 72px 0 0;
+  padding: 72px 0 92px;
   @media screen and (min-width: 768px) {
-    height: 1328px;
+    height: 1420px;
     background-image: url("../../assets/ellipse.png"),
       url("../../assets/decore.png");
     background-repeat: no-repeat;
     background-position: top left, top right;
   }
   @media screen and (min-width: 852px) {
-    height: 1108px;
+    height: 1200px;
   }
   @media screen and (min-width: 1022px) {
-    height: 1008px;
+    height: 1100px;
   }
   @media screen and (min-width: 1200px) {
-    height: 874px;
+    height: 966px;
     padding-top: 110px;
   }
 
@@ -100,6 +100,11 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    @media screen and (max-width: 767px) {
+      background-image: url("../../assets/offer-plus.png");
+      background-repeat: no-repeat;
+      background-position: bottom 12px right -42px;
+    }
     @media screen and (min-width: 768px) {
       flex-direction: row;
       gap: 44px;
