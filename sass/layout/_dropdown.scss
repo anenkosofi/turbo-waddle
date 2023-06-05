@@ -4,7 +4,9 @@
   align-items: center;
   gap: 6px;
   cursor: pointer;
-  transition: opacity 250ms $timing-function;
+  &:hover .dropdown__list {
+    opacity: 1;
+  }
 
   &__list {
     position: absolute;
@@ -17,6 +19,7 @@
     width: 100%;
     opacity: 0;
     pointer-events: none;
+    transition: opacity 250ms $timing-function;
   }
 
   &__icon {

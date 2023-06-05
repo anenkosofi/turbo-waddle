@@ -48,6 +48,8 @@
       opacity: 0;
       pointer-events: none;
       z-index: 3;
+      transition: opacity 250ms $timing-function,
+        transform 250ms $timing-function;
     }
 
     @media screen and (min-width: 768px) {
@@ -99,5 +101,57 @@
 
   &__sign-button {
     @include auth-button($secondary-dark);
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+
+  &__burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__label {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__burger-icon {
+    transition: opacity 250ms $timing-function;
+  }
+
+  &__close-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    stroke: $primary-light;
+    transition: opacity 250ms $timing-function;
+  }
+
+  &:has(.header__input:checked) .header__nav {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &:has(.header__input:checked) .header__close-icon {
+    opacity: 1;
+  }
+
+  &:has(.header__input:checked) .header__burger-icon {
+    opacity: 0;
   }
 }

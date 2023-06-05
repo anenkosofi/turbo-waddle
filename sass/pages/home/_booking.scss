@@ -110,15 +110,16 @@
     top: -36px;
     right: -48px;
     content: "";
-    width: 90%;
-    height: 364px;
+    width: 288px;
+    height: 323px;
     background: $blue;
     opacity: 0.8;
     filter: blur(75px);
     z-index: 1;
 
-    @media screen and (min-width: 425px) {
+    @media screen and (min-width: 768px) {
       width: 354px;
+      height: 364px;
     }
   }
 

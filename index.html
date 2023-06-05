@@ -35,15 +35,28 @@
               <button type="button" class="header__sign-button">Sign up</button>
             </div>
           </nav>
-          <div class="dropdown">
-            <span class="dropdown__selected">EN</span>
-            <svg width="9" height="5" class="dropdown__icon">
-              <use href="assets/sprite.svg#icon-arrow"></use>
-            </svg>
-            <ul class="dropdown__list">
-              <li class="dropdown__item">EN</li>
-              <li>UA</li>
-            </ul>
+          <div class="header__menu">
+            <div class="dropdown">
+              <span class="dropdown__selected">EN</span>
+              <svg width="9" height="5" class="dropdown__icon">
+                <use href="assets/sprite.svg#icon-arrow"></use>
+              </svg>
+              <ul class="dropdown__list">
+                <li class="dropdown__item">EN</li>
+                <li class="dropdown__item">UA</li>
+              </ul>
+            </div>
+            <div class="header__burger">
+              <label for="burger" class="header__label">
+                <svg width="24" height="14" class="header__burger-icon">
+                  <use href="assets/sprite.svg#icon-burger"></use>
+                </svg>
+                <svg width="20" height="20" class="header__close-icon">
+                  <use href="assets/sprite.svg#icon-close"></use>
+                </svg>
+              </label>
+              <input id="burger" type="checkbox" class="visually-hidden header__input" />
+            </div>
           </div>
         </div>
       </div>
