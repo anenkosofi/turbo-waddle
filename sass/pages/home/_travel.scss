@@ -1,14 +1,21 @@
 .travel {
   padding: 72px 0 0;
   @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-    height: 874px;
-    padding-top: 110px;
+    height: 1328px;
     background-image: url("../../assets/ellipse.png"),
       url("../../assets/decore.png");
     background-repeat: no-repeat;
     background-position: top left, top right;
+  }
+  @media screen and (min-width: 852px) {
+    height: 1108px;
+  }
+  @media screen and (min-width: 1022px) {
+    height: 1008px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 874px;
+    padding-top: 110px;
   }
 
   &__container {
@@ -16,14 +23,19 @@
   }
 
   &__content {
+    padding-top: 74px;
+    @media screen and (min-width: 768px) {
+      padding-top: 107px;
+    }
     @media screen and (min-width: 1200px) {
       width: 547px;
-      padding-top: 107px;
     }
   }
 
   &__pre-title {
-    display: none;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
     @media screen and (min-width: 768px) {
       margin-bottom: 24px;
       font-family: $secondary-font-stack;
@@ -43,7 +55,7 @@
     line-height: 1.85;
     letter-spacing: -0.04em;
     color: $tertiary-dark;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 30px;
       font-size: 84px;
       line-height: 1.06;
@@ -51,7 +63,9 @@
   }
 
   &__description {
-    display: none;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
     @media screen and (min-width: 768px) {
       width: 477px;
       margin-bottom: 34px;
@@ -65,11 +79,19 @@
   &__image {
     display: none;
     position: absolute;
-    top: 0;
     right: 0;
 
     @media screen and (min-width: 768px) {
+      bottom: -100%;
       display: block;
+      width: 660px;
+    }
+    @media screen and (min-width: 1022px) {
+      bottom: -85%;
+      width: 765px;
+    }
+    @media screen and (min-width: 1200px) {
+      top: 0;
     }
   }
 

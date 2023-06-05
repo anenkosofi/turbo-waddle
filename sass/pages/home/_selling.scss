@@ -22,12 +22,20 @@
     grid-template-rows: repeat(5, 80px);
     justify-content: center;
     justify-items: center;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(auto-fill, 240px);
+      grid-template-rows: repeat(3, 86px);
+      justify-items: center;
+      gap: 32px;
+    }
+    @media screen and (min-width: 824px) {
+      grid-template-rows: repeat(2, 86px);
+    }
 
     @media screen and (min-width: 1200px) {
       grid-template-columns: repeat(5, 240px);
       grid-template-rows: 86px;
-      justify-items: center;
-      padding: 42px 0 34px;
+      gap: 0;
     }
   }
 
