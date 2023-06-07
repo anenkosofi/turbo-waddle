@@ -107,10 +107,11 @@
 
   &::after {
     position: absolute;
-    top: -36px;
-    right: -48px;
+    top: -16px;
+    right: -24px;
     content: "";
-    width: 288px;
+    width: 100%;
+    max-width: 288px;
     height: 323px;
     background: $blue;
     opacity: 0.8;
@@ -118,6 +119,8 @@
     z-index: 1;
 
     @media screen and (min-width: 768px) {
+      top: -36px;
+      right: -48px;
       width: 354px;
       height: 364px;
     }

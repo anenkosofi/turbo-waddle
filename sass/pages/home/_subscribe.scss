@@ -25,6 +25,10 @@
     }
     @media screen and (min-width: 1200px) {
       max-width: 1200px;
+      background-image: url("../../assets/left-circle.png"),
+        url("../../assets/right-circle.png");
+      background-repeat: no-repeat;
+      background-position: bottom left -84px, top right;
     }
   }
 

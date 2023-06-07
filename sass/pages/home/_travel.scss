@@ -10,7 +10,7 @@
   @media screen and (min-width: 852px) {
     height: 1200px;
   }
-  @media screen and (min-width: 1022px) {
+  @media screen and (min-width: 1080px) {
     height: 1100px;
   }
   @media screen and (min-width: 1200px) {
@@ -23,6 +23,7 @@
   }
 
   &__content {
+    position: relative;
     padding-top: 74px;
     @media screen and (min-width: 768px) {
       padding-top: 107px;
@@ -49,6 +50,7 @@
 
   &__title {
     margin-bottom: 19px;
+    padding-left: 40px;
     font-family: $quaternary-font-stack;
     font-weight: 700;
     font-size: 48px;
@@ -57,6 +59,7 @@
     color: $tertiary-dark;
     @media screen and (min-width: 768px) {
       margin-bottom: 30px;
+      padding-left: 0;
       font-size: 84px;
       line-height: 1.06;
     }
@@ -86,12 +89,81 @@
       display: block;
       width: 660px;
     }
-    @media screen and (min-width: 1022px) {
+    @media screen and (min-width: 1080px) {
       bottom: -85%;
       width: 765px;
     }
     @media screen and (min-width: 1200px) {
       top: 0;
+    }
+  }
+
+  &__plane {
+    position: absolute;
+    width: 158px;
+    height: 150px;
+    cursor: pointer;
+    &_top {
+      top: -4%;
+      left: -32px;
+      @media screen and (min-width: 768px) {
+        top: 10%;
+        left: 360px;
+      }
+      @media screen and (min-width: 1200px) {
+        display: none;
+      }
+    }
+    &_left {
+      @media screen and (max-width: 1199px) {
+        display: none;
+      }
+      @media screen and (min-width: 1200px) {
+        top: 56px;
+        left: 133px;
+
+        @keyframes fly {
+          0% {
+            transform: translate(0, 0);
+          }
+          25% {
+            transform: translate(100%, -50%);
+          }
+          50% {
+            transform: translate(200%, -100%);
+          }
+          75% {
+            transform: translate(300%, -150%);
+          }
+          85% {
+            transform: translate(400%, -200%);
+          }
+          90% {
+            transform: translate(500%, -200%);
+          }
+          95% {
+            transform: translate(600%, -200%);
+          }
+          100% {
+            transform: translate(700%, -200%);
+          }
+        }
+        &:hover {
+          animation: fly 3000ms linear 0s;
+        }
+      }
+    }
+    &_right {
+      @media screen and (max-width: 1199px) {
+        display: none;
+      }
+      @media screen and (min-width: 1200px) {
+        top: 103px;
+        right: -12px;
+        &:hover {
+          animation: fly 3000ms linear 0s;
+        }
+      }
     }
   }
 

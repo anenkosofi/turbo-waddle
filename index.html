@@ -12,14 +12,14 @@
       rel="stylesheet">
     <link rel="stylesheet"
       href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="dist/css/main.min.css">
+    <link rel="stylesheet" href="./dist/css/main.min.css">
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
-        <a href="index.html" class="header__logo">
+        <a href="./index.html" class="header__logo">
           <svg width="115" height="34">
-            <use href="assets/sprite.svg#icon-logo"></use>
+            <use href="./assets/sprite.svg#icon-logo"></use>
           </svg>
         </a>
         <div class="header__nav-wrapper">
@@ -39,7 +39,7 @@
             <div class="dropdown">
               <span class="dropdown__selected">EN</span>
               <svg width="9" height="5" class="dropdown__icon">
-                <use href="assets/sprite.svg#icon-arrow"></use>
+                <use href="./assets/sprite.svg#icon-arrow"></use>
               </svg>
               <ul class="dropdown__list">
                 <li class="dropdown__item">EN</li>
@@ -49,10 +49,10 @@
             <div class="header__burger">
               <label for="burger" class="header__label">
                 <svg width="24" height="14" class="header__burger-icon">
-                  <use href="assets/sprite.svg#icon-burger"></use>
+                  <use href="./assets/sprite.svg#icon-burger"></use>
                 </svg>
                 <svg width="20" height="20" class="header__close-icon">
-                  <use href="assets/sprite.svg#icon-close"></use>
+                  <use href="./assets/sprite.svg#icon-close"></use>
                 </svg>
               </label>
               <input id="burger" type="checkbox" class="visually-hidden header__input" />
@@ -65,6 +65,9 @@
       <section class="travel">
         <div class="container travel__container">
           <div class="travel__content">
+            <svg class="travel__plane travel__plane_top">
+              <use href="./assets/sprite.svg#icon-plane"></use>
+            </svg>
             <p class="travel__pre-title">Best Destinations around the world</p>
             <h1 class="travel__title">Travel, enjoy and live a new and full life</h1>
             <p class="travel__description">Built Wicket longer admire do barton vanity itself do in it. Preferred to
@@ -77,15 +80,23 @@
               <button type="button" class="travel__demo-button">
                 <span class="demo-button__icon-container">
                   <svg width="15" height="15" class="demo-button__icon">
-                    <use href="assets/sprite.svg#icon-polygon"></use>
+                    <use href="./assets/sprite.svg#icon-polygon"></use>
                   </svg>
                 </span>
                 <span class="demo-button__text">Play Demo</span>
               </button>
             </div>
           </div>
-          <img src="assets/traveller.png"
-            alt="Girl sitting on suitcase with a big backpack oh her shoulders. She is smiling" class="travel__image" />
+          <div class="travel__image">
+            <img src="./assets/traveller.png"
+              alt="Girl sitting on suitcase with a big backpack oh her shoulders. She is smiling" />
+            <svg class="travel__plane travel__plane_left">
+              <use href="./assets/sprite.svg#icon-plane"></use>
+            </svg>
+            <svg class="travel__plane travel__plane_right">
+              <use href="./assets/sprite.svg#icon-plane"></use>
+            </svg>
+          </div>
         </div>
       </section>
       <section class="offer">
@@ -97,7 +108,7 @@
               <div class="offer__card">
                 <div class="offer__image">
                   <svg width="92" height="78" class="offer__icon">
-                    <use href="assets/sprite.svg#icon-satellite"></use>
+                    <use href="./assets/sprite.svg#icon-satellite"></use>
                   </svg>
                   <div class="offer__icon-square"></div>
                 </div>
@@ -112,7 +123,7 @@
               <div class="offer__card">
                 <div class="offer__image">
                   <svg width="158" height="150" class="offer__icon">
-                    <use href="assets/sprite.svg#icon-plane"></use>
+                    <use href="./assets/sprite.svg#icon-plane"></use>
                   </svg>
                   <div class="offer__icon-square"></div>
                 </div>
@@ -126,7 +137,7 @@
             <li class="offer__item">
               <div class="offer__card">
                 <div class="offer__image">
-                  <img src="assets/microphone.png" alt="Microphone" width="40px" class="offer__icon">
+                  <img src="./assets/microphone.png" alt="Microphone" width="40px" class="offer__icon">
                   <div class="offer__icon-square"></div>
                 </div>
                 <div class="offer__content">
@@ -141,7 +152,7 @@
               <div class="offer__card">
                 <div class="offer__image">
                   <svg width="50" height="50" class="offer__icon">
-                    <use href="assets/sprite.svg#icon-power"></use>
+                    <use href="./assets/sprite.svg#icon-power"></use>
                   </svg>
                 </div>
                 <div class="offer__content">
@@ -166,13 +177,13 @@
           <ul class="destination__list">
             <li class="destination__item">
               <a href="#" class="destination__link">
-                <img src="assets/rome.png" alt="Colloseum" width="310px" class="destination__image" />
+                <img src="./assets/rome.png" alt="Colloseum" width="310px" class="destination__image" />
                 <div class="destination__content">
                   <h3 class="destination__place">Rome, Italy</h3>
                   <span class="destination__price">$5,42k</span>
                   <div class="destination__duration">
                     <svg width="20" height="20" class="destination__icon">
-                      <use href="assets/sprite.svg#icon-navigation"></use>
+                      <use href="./assets/sprite.svg#icon-navigation"></use>
                     </svg>
                     <span>10 Days Trip</span>
                   </div>
@@ -181,13 +192,13 @@
             </li>
             <li class="destination__item">
               <a href="#" class="destination__link">
-                <img src="assets/london.jpg" alt="Big Ben" width="310px" class="destination__image" />
+                <img src="./assets/london.jpg" alt="Big Ben" width="310px" class="destination__image" />
                 <div class="destination__content">
                   <h3 class="destination__place">London, UK</h3>
                   <span class="destination__price">$4.2k</span>
                   <div class="destination__duration">
                     <svg width="20" height="20" class="destination__icon">
-                      <use href="assets/sprite.svg#icon-navigation"></use>
+                      <use href="./assets/sprite.svg#icon-navigation"></use>
                     </svg>
                     <span>12 Days Trip</span>
                   </div>
@@ -196,13 +207,13 @@
             </li>
             <li class="destination__item">
               <a href="#" class="destination__link">
-                <img src="assets/finland.png" alt="Finland cathedral" width="310px" class="destination__image" />
+                <img src="./assets/finland.png" alt="Finland cathedral" width="310px" class="destination__image" />
                 <div class="destination__content">
                   <h3 class="destination__place">Full Europe</h3>
                   <span class="destination__price">$15k</span>
                   <div class="destination__duration">
                     <svg width="20" height="20" class="destination__icon">
-                      <use href="assets/sprite.svg#icon-navigation"></use>
+                      <use href="./assets/sprite.svg#icon-navigation"></use>
                     </svg>
                     <span>28 Days Trip</span>
                   </div>
@@ -221,7 +232,7 @@
               <li class="booking__item">
                 <div class="booking__image booking__image_yellow">
                   <svg width="22" height="22">
-                    <use href="assets/sprite.svg#icon-selection"></use>
+                    <use href="./assets/sprite.svg#icon-selection"></use>
                   </svg>
                 </div>
                 <div class="booking__description">
@@ -235,7 +246,7 @@
               <li class="booking__item">
                 <div class="booking__image booking__image_red">
                   <svg width="22" height="22">
-                    <use href="assets/sprite.svg#icon-payment"></use>
+                    <use href="./assets/sprite.svg#icon-payment"></use>
                   </svg>
                 </div>
                 <div class="booking__description">
@@ -249,7 +260,7 @@
               <li class="booking__item">
                 <div class="booking__image booking__image_cyan">
                   <svg width="22" height="22">
-                    <use href="assets/sprite.svg#icon-taxi"></use>
+                    <use href="./assets/sprite.svg#icon-taxi"></use>
                   </svg>
                 </div>
                 <div class="booking__description">
@@ -264,7 +275,7 @@
           </div>
           <div class="trip">
             <div class="trip__info">
-              <img src="assets/turkey.jpg" alt="A girl in red dress" class="trip__image" />
+              <img src="./assets/turkey.jpg" alt="A girl in red dress" class="trip__image" />
               <h3 class="trip__place">Trip To Greece</h3>
               <p class="trip__content ">
                 <span class="trip__date">14-29 June</span>
@@ -274,34 +285,34 @@
               <ul class="trip__list">
                 <li class="trip__item">
                   <svg width="14" height="14">
-                    <use href="assets/sprite.svg#icon-leaf"></use>
+                    <use href="./assets/sprite.svg#icon-leaf"></use>
                   </svg>
                 </li>
                 <li class="trip__item">
                   <svg width="14" height="14">
-                    <use href="assets/sprite.svg#icon-map"></use>
+                    <use href="./assets/sprite.svg#icon-map"></use>
                   </svg>
                 </li>
                 <li class="trip__item">
                   <svg width="14" height="14">
-                    <use href="assets/sprite.svg#icon-send"></use>
+                    <use href="./assets/sprite.svg#icon-send"></use>
                   </svg>
                 </li>
               </ul>
               <div class="trip__overview">
                 <p class="trip__quantity">
                   <svg width="16" height="16">
-                    <use href="assets/sprite.svg#icon-building"></use>
+                    <use href="./assets/sprite.svg#icon-building"></use>
                   </svg>
                   <span>24 people going</span>
                 </p>
                 <svg width="20" height="19">
-                  <use href="assets/sprite.svg#icon-heart"></use>
+                  <use href="./assets/sprite.svg#icon-heart"></use>
                 </svg>
               </div>
               <div class="trip__card">
                 <div class="trip__outer-wrapper">
-                  <img src="assets/trip.png" alt="Trip" class="trip__card-image" />
+                  <img src="./assets/trip.png" alt="Trip" class="trip__card-image" />
                 </div>
                 <div class="trip__details">
                   <p class="trip__status">Ongoing</p>
@@ -327,7 +338,7 @@
           </div>
           <div class="testimonials__review">
             <div class="testimonials__thumb">
-              <img src="assets/person.png" alt="Man smiling" class="testimonials__image" />
+              <img src="./assets/person.png" alt="Man smiling" class="testimonials__image" />
             </div>
             <figure class="quote">
               <blockquote cite="" class="quote__container">
@@ -350,27 +361,27 @@
           <ul class="selling__list">
             <li class="selling__item">
               <a href="#">
-                <img src="assets/axon.png" alt="Axon logo" width="130px" />
+                <img src="./assets/axon.png" alt="Axon logo" width="130px" />
               </a>
             </li>
             <li class="selling__item">
               <a href="#">
-                <img src="assets/jetstar.png" alt="Jetstar logo" width="173px" />
+                <img src="./assets/jetstar.png" alt="Jetstar logo" width="173px" />
               </a>
             </li>
             <li class="selling__item">
               <a href="#">
-                <img src="assets/expedia.png" alt="Expedia logo" width="162px" />
+                <img src="./assets/expedia.png" alt="Expedia logo" width="162px" />
               </a>
             </li>
             <li class="selling__item">
               <a href="#">
-                <img src="assets/qantas.png" alt="Qantas logo" width="162px" />
+                <img src="./assets/qantas.png" alt="Qantas logo" width="162px" />
               </a>
             </li>
             <li class="selling__item">
               <a href="#">
-                <img src="assets/alitalia.png" alt="Alitalia logo" width="94px" />
+                <img src="./assets/alitalia.png" alt="Alitalia logo" width="94px" />
               </a>
             </li>
           </ul>
@@ -381,7 +392,7 @@
           <h2 class="visually-hidden subscribe__title">Subscribe</h2>
           <div class="subscribe__image">
             <svg width="45" height="40">
-              <use href="assets/sprite.svg#icon-purple-send"></use>
+              <use href="./assets/sprite.svg#icon-purple-send"></use>
             </svg>
           </div>
           <p class="subscribe__description">
@@ -402,7 +413,7 @@
       <div class="container footer__container">
         <div class="footer__links">
           <div class="footer__overview">
-            <a href="index.html" class="footer__logo">Jadoo.</a>
+            <a href="./index.html" class="footer__logo">Jadoo.</a>
             <p class="footer__description">
               Book your trip in minute, get full
               Control for much longer.
@@ -457,28 +468,28 @@
               <li class="footer__social-item">
                 <a href="https://www.facebook.com/">
                   <svg width="24" height="24">
-                    <use href="assets/sprite.svg#icon-facebook"></use>
+                    <use href="./assets/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__social-item">
                 <a href="https://www.instagram.com/">
                   <svg width="24" height="24">
-                    <use href="assets/sprite.svg#icon-instagram"></use>
+                    <use href="./assets/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__social-item">
                 <a href="https://twitter.com">
                   <svg width="24" height="20">
-                    <use href="assets/sprite.svg#icon-twitter"></use>
+                    <use href="./assets/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__social-item">
                 <a href="https://youtube.com">
                   <svg width="24" height="18">
-                    <use href="assets/sprite.svg#icon-youtube"></use>
+                    <use href="./assets/sprite.svg#icon-youtube"></use>
                   </svg>
                 </a>
               </li>
@@ -488,12 +499,12 @@
               <div class="footer__app">
                 <a href="">
                   <svg width="107" height="35">
-                    <use href="assets/sprite.svg#icon-google-play"></use>
+                    <use href="./assets/sprite.svg#icon-google-play"></use>
                   </svg>
                 </a>
                 <a href="">
                   <svg width="100" height="35">
-                    <use href="assets/sprite.svg#icon-apple-store"></use>
+                    <use href="./assets/sprite.svg#icon-apple-store"></use>
                   </svg>
                 </a>
               </div>
