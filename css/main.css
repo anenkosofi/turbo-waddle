@@ -318,6 +318,12 @@ body {
   opacity: 0;
 }
 
+@media screen and (max-width: 767px) {
+  html:has(.header__input:checked) body {
+    overflow: hidden;
+  }
+}
+
 .dropdown {
   position: relative;
   display: -webkit-box;
